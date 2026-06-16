@@ -1,0 +1,556 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "name": "Talha CEO",
+      "email": "mdmonjulhaque1996@gmail.com",
+      "phone": "01710237867",
+      "role": "admin",
+      "blocked": false,
+      "createdAt": "2026-01-01"
+    },
+    {
+      "id": "u_cust1",
+      "name": "Minhajul Karim",
+      "email": "minhaj@example.com",
+      "phone": "01855443322",
+      "role": "customer",
+      "blocked": false,
+      "createdAt": "2026-05-15",
+      "address": "House 45, Road 12, Dhanmondi",
+      "district": "Dhaka",
+      "upazila": "Dhanmondi"
+    }
+  ],
+  "userPasswords": {
+    "admin@talha.com": "8477dc7cfb185c7cef071b09cb831a2039ac1e341db05829231fb212e2d9f8ad8ec578763b2ed6a478032dd143eb25703289c3b0317053c741e0a76b6c7890d7",
+    "mdmonjulhaque1996@gmail.com": "8477dc7cfb185c7cef071b09cb831a2039ac1e341db05829231fb212e2d9f8ad8ec578763b2ed6a478032dd143eb25703289c3b0317053c741e0a76b6c7890d7",
+    "01710237867": "8477dc7cfb185c7cef071b09cb831a2039ac1e341db05829231fb212e2d9f8ad8ec578763b2ed6a478032dd143eb25703289c3b0317053c741e0a76b6c7890d7",
+    "talha": "8477dc7cfb185c7cef071b09cb831a2039ac1e341db05829231fb212e2d9f8ad8ec578763b2ed6a478032dd143eb25703289c3b0317053c741e0a76b6c7890d7",
+    "minhaj@example.com": "7e4e3df8e49e853078ddbe25e2099eaddb2de199c312ab8b5ef6a96585d344150793ac24358f6645cbbfa2f7d38dab8cf3ed8871ccfe7d34e0ede38f8be3c292"
+  },
+  "products": [
+    {
+      "name": "New",
+      "nameBn": "নিউ",
+      "category": "women",
+      "categoryBn": "নারীদের ফ্যাশন",
+      "brand": "Heritage Bengal",
+      "brandBn": "ঐতিহ্যবাহী বাংলা",
+      "price": 2000,
+      "discountPrice": 1500,
+      "stock": 15,
+      "description": "High quality premium fashion wear.",
+      "descriptionBn": "উচ্চ মানসম্পন্ন প্রিমিয়াম ফ্যাশন পোশাক।",
+      "images": [
+        "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Royal Gold",
+        "White"
+      ],
+      "id": "p_1781602437489",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": "w1",
+      "name": "Royal Golden Silk Saree",
+      "nameBn": "রয়াল গোল্ডেন সিল্ক শাড়ি",
+      "category": "women",
+      "categoryBn": "নারীদের ফ্যাশন",
+      "description": "Experience sheer elegance with this royal banarasi golden silk saree embellished with handwoven copper zari. Ideal for weddings, festivals, and cultural events.",
+      "descriptionBn": "হাতে বোনা কপার জরি দিয়ে সুসজ্জিত এই রাজকীয় বেনারসি সোনালী সিল্ক শাড়ির সাথে খাঁটি কমনীয়তার অভিজ্ঞতা নিন। বিয়ে, উৎসব এবং সাংস্কৃতিক অনুষ্ঠানের জন্য উপযুক্ত।",
+      "brand": "Heritage Bengal",
+      "brandBn": "ঐতিহ্যবাহী বাংলা",
+      "price": 4500,
+      "discountPrice": 3850,
+      "rating": 5,
+      "stock": 12,
+      "images": [
+        "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1610030470211-1ee77f722a86?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Gold",
+        "Deep Red",
+        "Emerald Green"
+      ],
+      "reviews": [
+        {
+          "id": "r1",
+          "productId": "w1",
+          "customerName": "Sabrina Rahman",
+          "rating": 5,
+          "comment": "Absolutely gorgeous saree! The silk is very soft and royal. Highly recommended.",
+          "approved": true,
+          "createdAt": "2026-06-10"
+        }
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "w2",
+      "name": "Stylish Designer Georgette Kurti",
+      "nameBn": "স্টাইলিশ ডিজাইনার জর্জেট কুর্তি",
+      "category": "women",
+      "categoryBn": "নারীদের ফ্যাশন",
+      "description": "Premium floor-touch georgette kurti with hand embroidered neck design and subtle stone highlights.",
+      "descriptionBn": "হাতে কারুকার্য করা গলার ডিজাইন এবং সূক্ষ্ম পাথরের হাইলাইট সহ প্রিমিয়াম ফ্লোর-টাচ জর্জেট কুর্তি।",
+      "brand": "Aura Boutique",
+      "brandBn": "আওরা বুটিক",
+      "price": 2400,
+      "discountPrice": 1950,
+      "rating": 4.5,
+      "stock": 8,
+      "images": [
+        "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548624149-f140c6a2b3d2?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Pink",
+        "Crimson Red",
+        "Midnight Black"
+      ],
+      "reviews": [],
+      "isNew": true
+    },
+    {
+      "id": "m1",
+      "name": "Premium Oxford Cotton Casual Shirt",
+      "nameBn": "প্রিমিয়াম অক্সফোর্ড কটন ক্যাজুয়াল শার্ট",
+      "category": "men",
+      "categoryBn": "পুরুষদের ফ্যাশন",
+      "description": "100% fine combed cotton oxford casual shirt featuring a sleek classic collar, slim-fit silhouette, and contrast chest stitching.",
+      "descriptionBn": "১০০% সূক্ষ্ম কম্বড কটন অক্সফোর্ড ক্যাজুয়াল শার্ট, যাতে রয়েছে মসৃণ ক্লাসিক কলার, স্লিম-ফিট সিলুয়েট এবং বৈপরীত্য বুক স্টিচিং।",
+      "brand": "Talha Tailoring",
+      "brandBn": "তালহা টেইলরিং",
+      "price": 1800,
+      "discountPrice": 1390,
+      "rating": 4,
+      "stock": 20,
+      "images": [
+        "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Classic White",
+        "Sky Blue",
+        "Olive Green"
+      ],
+      "reviews": [
+        {
+          "id": "r2",
+          "productId": "m1",
+          "customerName": "Arif Chowdhury",
+          "rating": 4,
+          "comment": "Fabulous slim fit shirt, nice fabric and stitching is top quality.",
+          "approved": true,
+          "createdAt": "2026-06-12"
+        }
+      ],
+      "isNew": true
+    },
+    {
+      "id": "m2",
+      "name": "Classic Semi-Fit Heritage Punjabi",
+      "nameBn": "ক্লাসিক সেমি-ফিট ঐতিহ্যবাহী পাঞ্জাবি",
+      "category": "men",
+      "categoryBn": "পুরুষদের ফ্যাশন",
+      "description": "Comfortable slub linen-cotton hybrid Punjabi with elegant collar self-embroidery, ideal for prayers, weddings, and traditional gatherings.",
+      "descriptionBn": "আরামদায়ক স্ল্যাব লিনেন-কটন হাইব্রিড পাঞ্জাবি যা মার্জিত কলার এমব্রয়ডারি সহ, প্রার্থনা, বিবাহ এবং ঐতিহ্যবাহী সমাবেশের জন্য দারুণ উপযোগী।",
+      "brand": "Heritage Bengal",
+      "brandBn": "ঐতিহ্যবাহী বাংলা",
+      "price": 3200,
+      "discountPrice": 2650,
+      "rating": 4.8,
+      "stock": 3,
+      "images": [
+        "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Vanilla White",
+        "Royal Blue",
+        "Maroon Red"
+      ],
+      "reviews": [],
+      "isPopular": true
+    },
+    {
+      "id": "k1",
+      "name": "Kids Floral Party Frock",
+      "nameBn": "বাচ্চাদের ফ্লোরাল পার্টী ফ্রক",
+      "category": "kids",
+      "categoryBn": "শিশুদের ফ্যাশন",
+      "description": "100% skin-safe inside lining baby party frock with premium hand embroidery details and layers of high density breathable tulle fabric.",
+      "descriptionBn": "১০০% শিশুর ত্বক-নিরাপদ অভ্যন্তরীণ লাইনিং সহ বেবি পার্টি ফ্রক যাতে রয়েছে প্রিমিয়াম হাতের সুই বোনা কাজ এবং স্তরে স্তরে টিউল ফ্যাব্রিক।",
+      "brand": "Tiny Buds",
+      "brandBn": "টাইনি বাডস",
+      "price": 1500,
+      "discountPrice": 1150,
+      "rating": 5,
+      "stock": 15,
+      "images": [
+        "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "2-3 Yrs",
+        "4-5 Yrs",
+        "6-7 Yrs"
+      ],
+      "colors": [
+        "Peachy Pink",
+        "Sky Blue",
+        "Lemon Yellow"
+      ],
+      "reviews": [
+        {
+          "id": "r3",
+          "productId": "k1",
+          "customerName": "Imran Khan",
+          "rating": 5,
+          "comment": "The kids frock is so bright and comfortable. My daughter matches perfectly in it.",
+          "approved": false,
+          "createdAt": "2026-06-14"
+        }
+      ],
+      "isNew": true
+    },
+    {
+      "id": "s1",
+      "name": "Casual Retro Sneaker Pro",
+      "nameBn": "ক্যাজুয়াল রেট্রো স্নিকার প্রো",
+      "category": "shoes",
+      "categoryBn": "জুতো",
+      "description": "Premium rubber grip, breathable knit technology sneakers, designed both for modern dynamic outfits and active schedules.",
+      "descriptionBn": "প্রিমিয়াম রাবার গ্রিপ ও ব্রিদাবল নিট প্রযুক্তির স্নিকার্স যা আজকের ট্রেন্ডি পোশাক এবং চটপটে দিনযাপনের জন্য সুবিধাজনক।",
+      "brand": "Apex Trend",
+      "brandBn": "এপেক্স ট্রেন্ড",
+      "price": 3600,
+      "discountPrice": 2890,
+      "rating": 4.6,
+      "stock": 5,
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "colors": [
+        "Sporty Red",
+        "Crispy White",
+        "Midnight Onyx"
+      ],
+      "reviews": [],
+      "isPopular": true
+    },
+    {
+      "id": "b1_bag",
+      "name": "Luxury Premium Ladies Leather Handbag",
+      "nameBn": "লাক্সারি প্রিমিয়াম লেডিস লেদার হ্যান্ডব্যাগ",
+      "category": "bags",
+      "categoryBn": "ব্যাগ",
+      "description": "Genuine high-quality full grain leather structured handbag featuring high-grade metallic gold clasps and spacious inner compartments.",
+      "descriptionBn": "জেনুইন হাই-কোয়ালিটি ফুল গ্রেইন লেদার দিয়ে তৈরি মাঝারি আকারের হ্যান্ডব্যাগ যাতে রয়েছে সোনালী মেটালিক ক্ল্যাস্প ও অত্যন্ত প্রশস্ত চেম্বার।",
+      "brand": "Vogue Royal",
+      "brandBn": "ভৌগ রয়াল",
+      "price": 5200,
+      "discountPrice": 4200,
+      "rating": 4.7,
+      "stock": 6,
+      "images": [
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "Standard"
+      ],
+      "colors": [
+        "Classic Brown",
+        "Midnight Tan",
+        "Blush Pink"
+      ],
+      "reviews": [],
+      "isPopular": true
+    },
+    {
+      "id": "j1",
+      "name": "18K Gold Plated Luxury Waterdrop Pendant",
+      "nameBn": "১৮কে গোল্ড প্লেটেড লাক্সারি ওয়াটারড্রপ পেন্ডেন্ট",
+      "category": "jewelry",
+      "categoryBn": "অলঙ্কার",
+      "description": "Premium hypoallergenic brass pendant delicately coated in 18K gold and set with AAA grade sapphire cubic zirconia stones.",
+      "descriptionBn": "১৮ ক্যারেট খাঁটি সোনায় প্রলেপ দেওয়া হাইপোঅ্যালার্জেনিক পেন্ডেন্ট যাতে চকচকে এএএ গ্রেড স্যাফায়ার কিউবিক জারকোনিয়া পাথর বসানো আছে।",
+      "brand": "Elite Jewelers",
+      "brandBn": "এলিট জুয়েলার্স",
+      "price": 1800,
+      "discountPrice": 1450,
+      "rating": 4.9,
+      "stock": 0,
+      "images": [
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Royal Gold"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "a1",
+      "name": "Minimalist Chrono Watch Elegant Edition",
+      "nameBn": "মিনিমালিস্ট ক্রোনো ওয়াচ এলিগ্যান্ট এডিশন",
+      "category": "accessories",
+      "categoryBn": "আনুষাঙ্গিক",
+      "description": "Premium wrist-watch with leather band, Japanese quartz chronograph mechanism, water resistant dial and high scratch tolerance crystal.",
+      "descriptionBn": "প্রিমিয়াম লেদার স্ট্র্যাপ রিস্ট-ওয়াচ যাতে রয়েছ জাপানি কোয়ার্টজ ক্রনোগ্রাফ মেকানিজম, ওয়াটার রেসিস্ট্যান্ট ডায়াল এবং স্ক্র্যাচ প্রুফ ক্রিস্টাল কাচ।",
+      "brand": "Timex Gallery",
+      "brandBn": "টাইমেক্স গ্যালারি",
+      "price": 4900,
+      "discountPrice": 3950,
+      "rating": 4.5,
+      "stock": 14,
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
+      ],
+      "sizes": [
+        "Standard"
+      ],
+      "colors": [
+        "Classic Tan Leather",
+        "Luxury Black Metal"
+      ],
+      "reviews": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "women",
+      "name": "Women Fashion",
+      "nameBn": "নারীদের ফ্যাশন",
+      "icon": "Shirt",
+      "count": 3
+    },
+    {
+      "id": "men",
+      "name": "Men Fashion",
+      "nameBn": "পুরুষদের ফ্যাশন",
+      "icon": "User",
+      "count": 3
+    },
+    {
+      "id": "kids",
+      "name": "Kids Fashion",
+      "nameBn": "শিশুদের ফ্যাশন",
+      "icon": "Baby",
+      "count": 2
+    },
+    {
+      "id": "shoes",
+      "name": "Shoes",
+      "nameBn": "জুতো",
+      "icon": "Footprints",
+      "count": 2
+    },
+    {
+      "id": "bags",
+      "name": "Bags",
+      "nameBn": "ব্যাগ",
+      "icon": "ShoppingBag",
+      "count": 1
+    },
+    {
+      "id": "jewelry",
+      "name": "Jewelry",
+      "nameBn": "অলঙ্কার",
+      "icon": "Gem",
+      "count": 1
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "nameBn": "আনুষাঙ্গিক",
+      "icon": "Watch",
+      "count": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "TFG-84920",
+      "customerName": "Minhajul Karim",
+      "email": "minhaj@example.com",
+      "phone": "01855443322",
+      "address": "House 45, Road 12, Dhanmondi",
+      "district": "Dhaka",
+      "upazila": "Dhanmondi",
+      "postalCode": "1209",
+      "paymentMethod": "bKash",
+      "paymentDetails": {
+        "transactionId": "BK6J90B88K3",
+        "payTime": "2026-06-15T10:14:00Z"
+      },
+      "items": [
+        {
+          "productId": "m1",
+          "name": "Premium Oxford Cotton Casual Shirt",
+          "nameBn": "প্রিমিয়াম অক্সফোর্ড কটন ক্যাজুয়াল শার্ট",
+          "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80",
+          "size": "L",
+          "color": "Sky Blue",
+          "quantity": 1,
+          "price": 1390
+        }
+      ],
+      "shippingFee": 60,
+      "discount": 0,
+      "totalAmount": 1450,
+      "status": "Processing",
+      "statusLogs": [
+        {
+          "status": "Pending",
+          "timestamp": "2026-06-15T10:14:00Z",
+          "note": "Order placed successfully via bKash.",
+          "noteBn": "বিকাশ এর মাধ্যমে অর্ডারটি সফলভাবে দেওয়া হয়েছে।"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-06-15T14:30:00Z",
+          "note": "Admin verified transaction and cargo allocation.",
+          "noteBn": "অ্যাডমিন পেমেন্ট ট্রানজেকশন সফলভাবে যাচাই করেছেন।"
+        },
+        {
+          "status": "Processing",
+          "timestamp": "2026-06-16T02:00:00Z",
+          "note": "Package is ready and in transit queue.",
+          "noteBn": "প্যাকেজটি তৈরি এবং প্রেরণের অপেক্ষায় রয়েছে।"
+        }
+      ],
+      "trackingNumber": "TRACK-84920BKS",
+      "createdAt": "2026-06-15T10:14:00Z"
+    }
+  ],
+  "coupons": [
+    {
+      "code": "TALHA20",
+      "discountPercent": 20,
+      "expiryDate": "2027-12-31",
+      "active": true,
+      "description": "Get 20% flat discount on any fashion purchase!",
+      "descriptionBn": "যেকোনো ফ্যাশন ক্রয়ে সরাসরি ২০% ছাড় পান!"
+    },
+    {
+      "code": "EID50",
+      "discountPercent": 50,
+      "expiryDate": "2026-07-31",
+      "active": true,
+      "description": "Mega Festive Eid Special Campaign - 50% Off",
+      "descriptionBn": "মেগা উৎসব ঈদ স্পেশাল ক্যাম্পেইন - ৫০% ছাড়"
+    },
+    {
+      "code": "WELCOME10",
+      "discountPercent": 10,
+      "expiryDate": "2027-01-01",
+      "active": true,
+      "description": "10% match discount for new client login accounts",
+      "descriptionBn": "নতুন গ্রাহকদের জন্য ১০% সমতুল্য ছাড়"
+    }
+  ],
+  "banners": [
+    {
+      "id": "b1",
+      "imageUrl": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&auto=format&fit=crop&q=80",
+      "title": "Summer Eid Collection 2026",
+      "titleBn": "সামার ঈদ কালেকশন ২০২৬",
+      "subtitle": "Get up to 50% discount on boutique designer outfits",
+      "subtitleBn": "বুটিক ডিজাইনার পোশাকে ৫০% পর্যন্ত ছাড় পান",
+      "link": "/category/women",
+      "active": true
+    },
+    {
+      "id": "b2",
+      "imageUrl": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=1600&auto=format&fit=crop&q=80",
+      "title": "Premium Men's Heritage Wear",
+      "titleBn": "প্রিমিয়াম পুরুষদের ঐতিহ্যবাহী পোশাক",
+      "subtitle": "Exquisite Punjabi, Shirts & Traditional Loafers",
+      "subtitleBn": "চমৎকার পাঞ্জাবি, শার্ট এবং ঐতিহ্যবাহী লোফার",
+      "link": "/category/men",
+      "active": true
+    },
+    {
+      "id": "b3",
+      "imageUrl": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=1600&auto=format&fit=crop&q=80",
+      "title": "Kids Colorful Festive Outfits",
+      "titleBn": "শিশুদের রঙিন উৎসবের পোশাক",
+      "subtitle": "Soft, skin-friendly high quality play fabrics",
+      "subtitleBn": "নরম, ত্বক-বান্ধব উচ্চ মানের খেলার কাপড়",
+      "link": "/category/kids",
+      "active": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "productId": "w1",
+      "customerName": "Sabrina Rahman",
+      "rating": 5,
+      "comment": "Absolutely gorgeous saree! The silk is very soft and royal. Highly recommended.",
+      "approved": true,
+      "createdAt": "2026-06-10"
+    },
+    {
+      "id": "r2",
+      "productId": "m1",
+      "customerName": "Arif Chowdhury",
+      "rating": 4,
+      "comment": "Fabulous slim fit shirt, nice fabric and stitching is top quality.",
+      "approved": true,
+      "createdAt": "2026-06-12"
+    },
+    {
+      "id": "r3",
+      "productId": "k1",
+      "customerName": "Imran Khan",
+      "rating": 5,
+      "comment": "The kids frock is so bright and comfortable. My daughter matches perfectly in it.",
+      "approved": false,
+      "createdAt": "2026-06-14"
+    }
+  ]
+}

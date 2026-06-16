@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Premium Warm Gold and Deep Charcoal Theme */
+  --color-brand-50: #fefcf0;
+  --color-brand-100: #fdf7d5;
+  --color-brand-200: #faeb9e;
+  --color-brand-300: #f6d85b;
+  --color-brand-400: #f2c229;
+  --color-brand-500: #d6a110;
+  --color-brand-600: #b57a09;
+  --color-brand-700: #905609;
+  --color-brand-800: #76450d;
+  --color-brand-900: #653910;
+  --color-brand-950: #3a1d04;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-gray-100 bg-[#0A0A0A] transition-colors duration-300 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-white;
+  }
+}
+
+/* Custom Utilities for elegant dark theme */
+.gold-text {
+  color: #D4AF37;
+}
+
+.gold-bg {
+  background-color: #D4AF37;
+}
+
+.dark-card {
+  background-color: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 100%);
+}
+
+.promo-badge {
+  background: #D4AF37;
+  color: #000;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #D4AF37;
+}
+
+/* Hidden Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(214, 161, 16, 0.4);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(214, 161, 16, 0.6);
+}
+
+/* Smooth Image Hover Ripple Zoom */
+.image-zoom-container {
+  overflow: hidden;
+}
+.image-zoom-container img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.image-zoom-container:hover img {
+  transform: scale(1.08);
+}
