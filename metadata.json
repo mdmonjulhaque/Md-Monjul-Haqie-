@@ -1,5 +1,5 @@
 {
-  "name": "Talha Fashion Gallery",
+  "name": "Talha Fashion Gallery Hub",
   "description": "A premium and responsive fashion e-commerce storefront with customer and admin dashboards.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
